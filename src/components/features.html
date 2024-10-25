@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Columns Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .custom-heading {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .custom-paragraph {
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    /* Flexbox container to equalize heights */
+    .equal-height {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    /* Setting a min-height to ensure alignment */
+    .col-md-4 {
+      min-height: 350px; /* Adjust as necessary */
+    }
+
+    .image-container {
+    display: flex;
+    gap: 50px; /* space between images */
+    justify-content: center; /* center images horizontally */
+}
+
+.image-container img {
+    width: 30%; /* adjust width as needed */
+    height: auto; /* keep aspect ratio */
+    max-width: 700px; /* optional maximum width */
+    border-radius: 8px; /* optional rounded corners */
+}
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row text-center">
+    <!-- Column 1 -->
+    <div class="col-md-4 d-flex">
+      <div class="equal-height">
+        <h3 class="custom-heading">Energy Redistribution:</h3>
+        <p class="custom-paragraph">
+          The system monitors real-time solar energy production. If excess solar energy is generated beyond household consumption needs, it can be stored in batteries or redirected back to the grid. By selling surplus energy to the grid during peak tariff times, users can earn credits or savings, thus reducing overall energy costs.
+        </p>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="col-md-4 d-flex">
+      <div class="equal-height">
+        <h3 class="custom-heading">Energy Savings and Storage Management:</h3>
+        <p class="custom-paragraph">
+          The system tracks energy production and consumption patterns and stores surplus solar energy in battery storage. During high-tariff periods, the system prioritizes using stored solar energy instead of grid energy, reducing reliance on the grid and optimizing energy savings. Any remaining stored energy can be sold to the grid.
+        </p>
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="col-md-4 d-flex">
+      <div class="equal-height">
+        <h3 class="custom-heading">Data Analytics for Energy Optimization:</h3>
+        <p class="custom-paragraph">
+          Machine learning models analyze energy usage patterns, solar production, and grid tariffs in real time. By leveraging historical and real-time data, the system predicts future consumption trends, identifies optimal times for energy redistribution, and suggests the best times to sell energy back to the grid.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="image-container">
+    <img src="../assets/graph1.jpg" alt="Graph 1" />
+    <img src="../assets/graph2.jpg" alt="Graph 2" />
+    <img src="../assets/graph3.jpg" alt="Graph 3" />
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

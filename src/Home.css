@@ -1,0 +1,29 @@
+.justify-text {
+    text-align: justify; 
+  }
+  .center-text {
+    text-align: center; 
+    
+}
+
+#container {
+    background-color: #f0f8ff; 
+    border-radius: 10px; 
+    padding: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 300px; 
+    margin: 20px auto; 
+    text-align: center;
+}
+
+.center-text {
+    margin: 0; 
+    font-size: 22px; 
+    color: #333; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    padding-bottom: 5px; 
+    border-bottom: 2px solid #007bff; 
+}
+
